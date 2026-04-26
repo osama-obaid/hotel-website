@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="احجز غرفتك في فندق بلاتينيوم - أفضل العروض والأسعار">
+    <meta name="keywords" content="حجز فندق, بلاتينيوم, صنعاء, حجز غرف">
+    <meta name="author" content="Platinum Hotel">
+    <title>حجز الغرف | فندق بلاتينيوم</title>
+    <link rel="icon" type="image/x-icon" href="#">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="	https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Flatpickr for date picker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="assets/css/booking.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+
+ 
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">PLATINUM<span> HOTEL</span></a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#services">الخدمات</a></li>
+                <li><a href="index.html#about">من نحن</a></li>
+                <li><a href="booking.html" style="color: #c9a03d;">حجز</a></li>
+                <li><a href="index.html#contact">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="booking-hero">
+        <h1>احجز <span>غرفتك</span> الآن</h1>
+        <p>احصل على أفضل العروض والأسعار عند الحجز المباشر معنا</p>
+    </section>
+
+    <!-- Booking Container -->
+    <div class="booking-container">
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <h2>معلومات الحجز</h2>
+            <p>يرجى تعبئة البيانات التالية لإتمام عملية الحجز</p>
+
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> الاسم الكامل</label>
+                        <input type="text" id="fullName" placeholder="أدخل اسمك الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> رقم الهاتف</label>
+                        <input type="tel" id="phone" placeholder="+967XXXXXXXXX" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                        <input type="email" id="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-id-card"></i> رقم الهوية</label>
+                        <input type="text" id="idNumber" placeholder="رقم الهوية أو جواز السفر">
+                    </div>
+                </div>
+
+                <div class="form-row-3">
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> تاريخ الوصول</label>
+                        <input type="text" id="checkIn" placeholder="اختر التاريخ" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar-alt"></i> تاريخ المغادرة</label>
+                        <input type="text" id="checkOut" placeholder="اختر التاريخ" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-users"></i> عدد الضيوف</label>
+                        <select id="guests" class="">
+                            <option value="1">1 ضيف</option>
+                            <option value="2" selected>2 ضيوف</option>
+                            <option value="3">3 ضيوف</option>
+                            <option value="4">4 ضيوف</option>
+                            <option value="5">5 ضيوف</option>
+                            <option value="6">6 ضيوف</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-sticky-note"></i> ملاحظات إضافية</label>
+                    <textarea rows="3" placeholder="أي طلبات خاصة أو ملاحظات..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Room Selection -->
+        <div>
+            <div class="room-selection">
+                <h2>اختر غرفتك</h2>
+                <p>جميع الغرف تشمل وجبة إفطار مجانية وواي فاي</p>
+
+                <div class="room-card" data-room="standard" data-price="50">
+                    <div class="room-card-header">
+                        <h3>غرفة قياسية</h3>
+                        <div class="room-price">$50 <span>/ ليلة</span></div>
+                    </div>
+                    <p>غرفة مريحة ومناسبة للأفراد والأزواج</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-bed"></i> سرير مزدوج</span>
+                        <span><i class="fas fa-tv"></i> تلفاز بشاشة مسطحة</span>
+                        <span><i class="fas fa-wifi"></i> واي فاي مجاني</span>
+                        <span><i class="fas fa-snowflake"></i> تكييف</span>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room="deluxe" data-price="85">
+                    <div class="room-card-header">
+                        <h3>غرفة ديلوكس</h3>
+                        <div class="room-price">$85 <span>/ ليلة</span></div>
+                    </div>
+                    <p>غرفة فاخرة مع إطلالة رائعة ومساحة أكبر</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-bed"></i> سرير كينغ</span>
+                        <span><i class="fas fa-tv"></i> تلفاز 55 بوصة</span>
+                        <span><i class="fas fa-wifi"></i> واي فاي فائق السرعة</span>
+                        <span><i class="fas fa-coffee"></i> ماكينة قهوة</span>
+                        <span><i class="fas fa-bath"></i> جاكوزي</span>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room="suite" data-price="150">
+                    <div class="room-card-header">
+                        <h3>جناح فاخر</h3>
+                        <div class="room-price">$150 <span>/ ليلة</span></div>
+                    </div>
+                    <p>جناح ملكي مع غرفة معيشة منفصلة وإطلالة بانورامية</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-bed"></i> سرير كينغ</span>
+                        <span><i class="fas fa-tv"></i> تلفاز 65 بوصة</span>
+                        <span><i class="fas fa-wifi"></i> واي فاي فائق السرعة</span>
+                        <span><i class="fas fa-coffee"></i> ماكينة قهوة</span>
+                        <span><i class="fas fa-bath"></i> جاكوزي + ساونا</span>
+                        <span><i class="fas fa-concierge-bell"></i> خدمة خاصة</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Summary -->
+            <div class="booking-summary">
+                <h2>ملخص الحجز</h2>
+                <div class="summary-item">
+                    <span>نوع الغرفة</span>
+                    <span id="summaryRoom">غرفة قياسية</span>
+                </div>
+                <div class="summary-item">
+                    <span>سعر الليلة</span>
+                    <span id="summaryPrice">$50</span>
+                </div>
+                <div class="summary-item">
+                    <span>عدد الليالي</span>
+                    <span id="summaryNights">0 ليالي</span>
+                </div>
+                <div class="summary-item">
+                    <span>عدد الضيوف</span>
+                    <span id="summaryGuests">2 ضيوف</span>
+                </div>
+                <div class="summary-total">
+                    <span>الإجمالي</span>
+                    <span id="summaryTotal">$0</span>
+                </div>
+                <button class="submit-btn" onclick="submitBooking()">
+                    <i class="fas fa-check-circle"></i> تأكيد الحجز
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Banner -->
+    <div class="features-banner">
+        <div class="container">
+            <div class="feature-item">
+                <i class="fas fa-wifi"></i>
+                <h4>واي فاي مجاني</h4>
+                <p>إنترنت فائق السرعة في جميع أنحاء الفندق</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-utensils"></i>
+                <h4>إفطار مجاني</h4>
+                <p>بوفيه إفطار مفتوح يومياً</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-car"></i>
+                <h4>موقف سيارات</h4>
+                <p>موقف خاص ومجاني للسيارات</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-clock"></i>
+                <h4>تسجيل مرن</h4>
+                <p>تسجيل دخول ومغادرة في أي وقت</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>فندق بلاتينيوم</h4>
+                <p>أفخم فنادق صنعاء، نقدم لكم تجربة إقامة راقية تجمع بين الفخامة والراحة.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>روابط سريعة</h4>
+                <p><a href="index.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">الرئيسية</a></p>
+                <p><a href="index.html#services"
+                        style="color: rgba(255,255,255,0.7); text-decoration: none;">الخدمات</a></p>
+                <p><a href="index.html#about" style="color: rgba(255,255,255,0.7); text-decoration: none;">من نحن</a>
+                </p>
+                <p><a href="booking.html" style="color: #c9a03d; text-decoration: none;">حجز</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>معلومات الاتصال</h4>
+                <p><i class="fas fa-map-marker-alt"></i> اليمن، صنعاء، شارع المطار الجديد</p>
+                <p><i class="fas fa-phone"></i> +967 770 410 071</p>
+                <p><i class="fas fa-envelope"></i> info@platinume-hotel.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>ساعات العمل</h4>
+                <p>استقبال على مدار 24 ساعة</p>
+                <p>تسجيل دخول: من 14:00</p>
+                <p>تسجيل خروج: حتى 12:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 فندق بلاتينيوم. جميع الحقوق محفوظة | تصميم وتطوير Osama Obaid</p>
+        </div>
+    </footer>
+
+   <script src="assets/js/booking.js"></script>
+</body>
+
+</html>
