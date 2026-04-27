@@ -6,54 +6,45 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-## 🌟 نظرة عامة
+---
 
-موقع إلكتروني احترافي لفندق **فندق** - فندق فاخر في صنعاء، اليمن. يقدم الموقع تجربة مستخدم مميزة مع تصميم عصري ومتجاوب.
+## 🌟 Overview
+A modern and fully responsive **Luxury Hotel Website** built with HTML, CSS, and JavaScript.  
+Designed with a premium gold & dark theme and full Arabic RTL support.
 
-## ✨ المميزات
+---
 
-- 🎨 **تصميم عصري وجذاب** - ألوان فاخرة (ذهبي وأسود)
-- 📱 **متجاوب بالكامل** - يعمل على جميع الأجهزة (هواتف، أجهزة لوحية، حواسيب)
-- 🖼️ **سلايدر تفاعلي** - عرض الصور مع حركات انسيابية
-- 📅 **نظام حجز متكامل** - حجز الغرف مع حساب الأسعار تلقائياً
-- 📍 **خرائط جوجل** - تحديد موقع الفندق
-- 📧 **نموذج اتصال** - تواصل سهل مع إدارة الفندق
-- 🌐 **أيقونات تفاعلية** - باستخدام Font Awesome
+## ✨ Features
 
-## 🛠️ التقنيات المستخدمة
+- 🎨 Modern luxury UI (Gold & Dark theme)
+- 📱 Fully Responsive (Mobile, Tablet, Desktop)
+- 🖼️ Interactive Image Slider
+- 📅 Dynamic Booking System
+- 📍 Google Maps Integration
+- 📧 Contact Form
+- 🌐 RTL Arabic Support
 
-| التقنية | الاستخدام |
-|---------|-----------|
-| HTML5 | هيكل الصفحات |
-| CSS3 | التصميم والتأثيرات |
-| JavaScript | التفاعلات والسلايدر والحجز |
-| Flatpickr | اختيار التواريخ |
-| Font Awesome | الأيقونات |
-| Google Fonts | الخطوط العربية |
+---
 
-## 📸 معاينة الموقع
-![index](Hotel-index.png)
-![booking](Hotel-booking.png)
+## 🛠️ Technologies Used
 
-### الصفحة الرئيسية
-- عرض الخدمات والفعاليات
-- سلايدر صور تفاعلي
-- قسم "من نحن" مع المميزات
+- HTML5  
+- CSS3  
+- JavaScript  
+- Font Awesome  
+- Google Fonts  
 
-### صفحة الحجز
-- اختيار نوع الغرفة (قياسية / ديلوكس / جناح)
-- تحديد تواريخ الوصول والمغادرة
-- حساب تلقائي لعدد الليالي والإجمالي
-- ملخص حجز ديناميكي
+---
 
-## 🚀 كيفية التشغيل محلياً
+## 📸 Screenshots
+
+![Home Page](Hotel-index.png)  
+![Booking Page](Hotel-booking.png)
+
+---
+
+## 🚀 How to Run
 
 ```bash
-# 1. استنساخ المشروع
-git clone https://github.com/your-username/Platinum-Hotel.git
-
-# 2. الدخول إلى مجلد المشروع
-cd Platinum-Hotel
-
-# 3. فتح الموقع في المتصفح
-# افتح ملف index.html مباشرة في أي متصفح
+git clone https://github.com/osama-obaid/hotel-website.git
+cd hotel-website
